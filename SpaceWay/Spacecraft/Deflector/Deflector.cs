@@ -1,7 +1,7 @@
 ﻿namespace SpaceWay.Spacecraft.Deflector;
 public class Deflector(int deflectorClass) : IDeflector
 {
-    public int Strength { get; private set; } = deflectorClass switch
+    private int _strength = deflectorClass switch
     {
         1 => 2,
         2 => 10,
